@@ -1,0 +1,17 @@
+'Using Variables in a program
+TextWindow.Write("Enter your name")
+name=TextWindow.Read()
+TextWindow.Write("Hello " + name + ". ")
+TextWindow.WriteLine("How are you doing " + name + "?")
+
+'Playing with numbers as variables
+number1=10
+number2=20
+number3=number1+number2
+TextWindow.WriteLine(number3)
+
+'Temperature converter
+TextWindow.Write("Enter temperature in Fahrenheit: ")
+fahr=TextWindow.ReadNumber()
+celsius=5*(fahr-32)/9
+TextWindow.WriteLine("Temperature in Celsius is " + celsius)
