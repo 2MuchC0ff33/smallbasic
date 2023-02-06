@@ -1,0 +1,13 @@
+'Chapter 5: Loops
+
+'For Loop
+For i = 1 To 24 Step 2
+TextWindow.WriteLine(i)
+EndFor
+
+'While Loop
+number = 100
+While (number > 1)
+TextWindow.WriteLine(number)
+number = number / 2
+EndWhile
