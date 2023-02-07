@@ -1,0 +1,8 @@
+'Chapter 6: Beginning Graphics
+
+GraphicsWindow.Title = "My Graphics Window"
+GraphicsWindow.PenColor = "Red"
+GraphicsWindow.DrawRectangle(20, 20, 300, 60)
+GraphicsWindow.BrushColor = "Green"
+GraphicsWindow.FillRectangle(60, 100, 300, 60)
+GraphicsWindow.Show()
