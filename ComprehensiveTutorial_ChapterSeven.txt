@@ -1,0 +1,49 @@
+' Chapter 7: Fun With Shapes
+
+' Rectangalore
+' GraphicsWindow.BackgroundColor = "Black"
+' GraphicsWindow.PenColor = "LightBlue"
+' For i = 1 To 100 Step 5
+' GraphicsWindow.DrawRectangle(100 - i, 100 - i, i * 2, i * 2)
+' EndFor
+
+' Circtacular
+' GraphicsWindow.BackgroundColor = "Black"
+' GraphicsWindow.PenColor = "LightGreen"
+' For i = 1 To 100 Step 5
+' GraphicsWindow.DrawEllipse(100 - i, 100 - i, i * 2, i * 2)
+' EndFor
+
+' Randomize
+' GraphicsWindow.BackgroundColor = "Black"
+' For i = 1 To 1000
+' GraphicsWindow.BrushColor = GraphicsWindow.GetRandomColor()
+' x = Math.GetRandomNumber(640)
+' y = Math.GetRandomNumber(480)
+' GraphicsWindow.FillEllipse(x, y, 10, 10)
+' EndFor
+
+' Fractals
+GraphicsWindow.BackgroundColor = "Black"
+x = 100
+y = 100
+
+For i = 1 To 100000
+r = Math.GetRandomNumber(3)
+ux = 150
+uy = 30
+If (r = 1) then
+ux = 30
+ui = 1000
+EndIf
+
+If (r = 2) Then
+ux = 1000
+uy = 1000
+EndIf
+
+x = (x + ux) / 2
+y = (y + uy) / 2
+
+GraphicsWindow.SetPixel(x, y, "LightGreen")
+EndFor
